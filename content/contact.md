@@ -1,9 +1,9 @@
 ---
 title: "Let’s, Talk </br> About You"
 description: "meta description"
-phone: "+211234565523"
-mail: "info@email.com"
-location: "9567 Turner Trace Apt. BC C3G8A4"
+phone: "+34632122909"
+mail: "reivajpg@telegmail.com"
+location: "Calle Agapito Marazuela #9 Segovia, España. CP. 40005"
 form_action: "#"
 layout: "contact"
 addresses:

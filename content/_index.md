@@ -1,9 +1,9 @@
 ---
 banner:
   title: Welcome **!**
-  title_small: "to John Bravo's Blog"
-  content: Are Developer and recently started your own business Already made website to ensure presence wants to develop.
-  image_enable: true
+  title_small: "to ReivaJPG Blog"
+  content: Hello, I am an electronics technician and a fan of programming. I created this website to share my work and hobbies...
+  image_enable: false
   image: /images/banner-author.png
   button:
     enable: true
