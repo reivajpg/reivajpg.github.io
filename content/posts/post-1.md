@@ -28,14 +28,13 @@ It is recommended that anyone attempting this procedure do their own research in
 Where PuTTY is used in this guide, any telnet client will work. You can also use LG's CLI tools or any SSH client instead of the Dev Manager program, although instructions for those are not (yet) provided.
 
 # Steps
-1. Enable Developer Mode: See [this guide
-](https://webostv.developer.lge.com/develop/getting-started/developer-mode-app) from LG. If you have trouble (e.g., not getting the prompt to sign in), try rebooting. A reboot is required after setting Dev Mode Status to ON. The Developer Mode app should look something like this:  
+1. Enable Developer Mode: See [this guide](https://webostv.developer.lge.com/develop/getting-started/developer-mode-app) from LG. If you have trouble (e.g., not getting the prompt to sign in), try rebooting. A reboot is required after setting Dev Mode Status to ON. The Developer Mode app should look something like this:  
     <img src="https://user-images.githubusercontent.com/68320646/223638186-8bff2c84-0de1-4fd5-b909-0a3d6813e442.png" alt="Developer Mode app" width="500">
 
 
 2. Download Software:  
     a. [WebOS-Dev-Manager](https://github.com/webosbrew/dev-manager-desktop/releases)  
-    b. [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
+    b. [PuTTY](https://www.puttygen.com/download-putty)  
     c. [Homebrew Channel IPK](https://github.com/webosbrew/webos-homebrew-channel/releases) (Latest version, currently 0.6.3)
 
 3. Disable Quick Start+. This is in the menu, but its exact location depends on the webOS version. For example, on webOS 5, after pressing the menu button on the remote, it can be found in All Settings > General > Additional Settings. On webOS 6, it is under All Settings > General > Devices > TV Management.
