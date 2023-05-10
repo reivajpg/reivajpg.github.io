@@ -29,7 +29,7 @@ Where PuTTY is used in this guide, any telnet client will work. You can also use
 
 # Steps
 1. Enable Developer Mode: See [this guide](https://webostv.developer.lge.com/develop/getting-started/developer-mode-app) from LG. If you have trouble (e.g., not getting the prompt to sign in), try rebooting. A reboot is required after setting Dev Mode Status to ON. The Developer Mode app should look something like this:  
-    <img src="https://user-images.githubusercontent.com/68320646/223638186-8bff2c84-0de1-4fd5-b909-0a3d6813e442.png" alt="Developer Mode app" width="500">
+    <img src="https://user-images.githubusercontent.com/68320646/223638186-8bff2c84-0de1-4fd5-b909-0a3d6813e442.png" alt="Developer Mode app" width="500"/>
 
 
 2. Download Software:  
