@@ -43,7 +43,7 @@ Where PuTTY is used in this guide, any telnet client will work. You can also use
 **Note: If you have an OLED TV, it may stay on for a while (to run the Pixel Refresher) despite appearing to be off. Thus, when you turn it back on, it won't have actually rebooted. You can unplug it to be sure it's off.**
 
 5. In the LG Developer Mode app, enable the Key Server. It should look like this:  
-    <img src="https://user-images.githubusercontent.com/68320646/223635272-863dab74-2ede-44df-ad52-ee18294d6f57.png" alt="Key Server enabled">
+    <img src="https://user-images.githubusercontent.com/68320646/223635272-863dab74-2ede-44df-ad52-ee18294d6f57.png" alt="Key Server enabled"/>
 
 6. In Dev Manager, perform these steps:  
     a. Click "+ Add Device"  
