@@ -2,7 +2,7 @@
 title: Ventajas de rootear un televisor WebOS
 date: 2022-04-02T03:00:00+00:00
 image: /images/post/post-3.png
-categories: ["webos"], ["root"], ["mod"]
+categories: ["webos"],["root"],["mod"]
 featured: true
 draft: false
 ---
