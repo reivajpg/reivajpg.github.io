@@ -22,7 +22,6 @@ import {
   IoLogoSnapchat,
   IoLogoSoundcloud,
   IoLogoTiktok,
-  IoLogoTelegram,
   IoLogoTumblr,
   IoLogoTwitter,
   IoLogoVimeo,
@@ -59,7 +58,6 @@ const Social = ({ source, className }) => {
     snapchat,
     vimeo,
     tiktok,
-    telegram,
     foursquare,
     rss,
     email,
@@ -355,18 +353,6 @@ const Social = ({ source, className }) => {
             rel="noopener noreferrer nofollow"
           >
             <IoLogoTiktok />
-          </a>
-        </li>
-      )}
-      {telegram && (
-        <li className="inline-block">
-          <a
-            aria-label="telegram"
-            href={telegram}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <IoLogoTelegram />
           </a>
         </li>
       )}
