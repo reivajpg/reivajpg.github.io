@@ -22,7 +22,7 @@ import {
   IoLogoSnapchat,
   IoLogoSoundcloud,
   IoLogoTiktok,
-  IoLogoTelegram
+  IoLogoTelegram,
   IoLogoTumblr,
   IoLogoTwitter,
   IoLogoVimeo,
