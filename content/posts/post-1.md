@@ -2,13 +2,15 @@
 title: "How to root your LG TV with WebOS installed"
 date: 2023-05-04T01:00:00Z
 image: /images/post/webOS-6.0-New-Home.webp
-categories: ["hacks"]
+categories: ["hacks","root", mod]
 featured: true
 draft: false
 ---
 
 
-# News
+# How to root your LG TV with WebOS installed
+Information taken from this [post](https://gist.github.com/throwaway96/e811b0f7cc2a705a5a476a8dfa45e09f)
+
 ## Note: 2023 models (2023-03-29)
 *If you have a 2023 LG TV, please contact us on [Discord](https://discord.gg/xWqRVEm) or reply here.*
 
@@ -395,4 +397,3 @@ The same information can be found in the file `/var/run/nyx/device_info.json`, w
 
 I have a large collection of TV boards and supporting hardware that I use for development and testing of stuff like this. It can get expensive (especially with all the weird cables LG likes to use). If you can afford to, please [donate via ko-fi](https://ko-fi.com/throwaway96) to support my work. I also may be interested in TV parts (and other electronics or test/measurement gear).
 
-[Reference](https://gist.github.com/throwaway96/e811b0f7cc2a705a5a476a8dfa45e09f)
