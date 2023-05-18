@@ -1,6 +1,9 @@
 ---
 title: "DFU restore Apple Silicon Macs with macvdmtool"
 date: 2021-11-04
+image: /images/post/post-2.png
+categories: ["apple"]
+featured: true
 draft: false
 ---
 
