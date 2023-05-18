@@ -1,0 +1,777 @@
+
+<title>How to Remove Mac Firmware Password + New way if you have a 2018-2020 T2 Mac!</title>
+<link rel="canonical" href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/" />
+
+
+<meta property="og:description" content="You can now remove the firmware password (+ erase all data) on a T2 Mac without Apple Support if you forgot it. In this article, I will go over the history of the firmware password on Intel Mac computers. After that, I will show you a new way how to remove the firmware password (and &hellip; Continue reading &quot;How to Remove Mac Firmware Password + New way if you have a 2018-2020 T2 Mac!&quot;" />
+<meta property="og:url" content="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/" />
+<meta property="og:image" content="https://mrmacintosh.com/wp-content/uploads/2021/03/Remove-the-Firmware-Password-2011-2020-Macs-New-way-for-2018-2020-T2-Macs-1024x576.png" />
+<meta name="author" content="Mr. Macintosh" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@MrMacintoshBlog" />
+<meta name="twitter:site" content="@MrMacintoshBlog" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Mr. Macintosh" />
+<meta name="twitter:label2" content="Est. reading time" />
+<meta name="twitter:data2" content="7 minutes" />
+
+
+
+
+You can now remove the firmware password (+ erase all data) on a T2 Mac without Apple Support if you forgot it.
+<p>In this article, I will go over the history of the firmware password on Intel Mac computers. After that, I will show you a new way how to remove the firmware password (and erase your data) on a T2 Mac from 2018-2020. <strong>(Scroll to section 6)</strong>.</p>
+<p><em>NOTE: This information is only for 2006-2020 Intel Mac computers. Apple Silicon M1 Mac Devices do not have a firmware password. </em></p>
+<p><strong>I will also go over my recommendations on how you can protect your data at the end of this article.</strong></p>
+<p>I will answer the following questions.</p>
+<ol><li>What does setting a firmware password on a Mac do?</li><li>What are the differences in firmware passwords from the following years &#8211; 2006-2010, 2011-2017 &amp; 2018-2020?</li><li>How to you set the firmware password in recovery.</li><li>How to Enable &amp; Disable Firmware Password in macOS.</li><li>What can you do if you forget the firmware password?</li><li>How to remove the firmware password with Apple Support.</li><li><strong>Removing the firmware password on a T2 Mac with Apple Configurator 2.</strong></li><li>How long was this new way possible? Does anyone at AppleCare know about this?</li><li>What does this mean for education, small &amp; large companies, home users, computer recyclers, and criminals?</li><li>What does Apple think about this?</li><li>How can I protect my Data on an Intel and M1 Mac?</li></ol>
+<span id="more-4475"></span>
+<h2 class="wp-block-heading" id="1-what-does-setting-a-firmware-password-on-a-mac-do">1. What does setting a firmware password on a Mac do?</h2>
+<p>The firmware password was designed to protect your Mac. This mode protects against someone who wants to get your data. They can&#8217;t boot into target disk mode or recovery to access your files.</p>
+<p>Long story short, if your Mac lands in the wrong hands and you do NOT have the following items enabled below, all your data is at risk!. </p>
+<ol><li>Firmware Password</li><li>FileVault 2 Encryption</li><li>Activation Lock / Find My Mac</li></ol>
+<p>A person could access your data via Target disk mode or macOS Recovery, even if they do not know your user password!</p>
+<blockquote class="wp-block-quote"><p>When you set a firmware password, users who don&#8217;t have the password can&#8217;t start up from any disk other than the designated startup disk.</p><cite>https://support.apple.com/en-us/HT204455</cite></blockquote>
+<p>The Apple article below details different startup modes.</p>
+<p><a href="https://support.apple.com/en-gb/HT201255" target="_blank" rel="noreferrer noopener">https://support.apple.com/en-gb/HT201255</a></p>
+<p><strong>If you enable the firmware password, the following startup items are disabled.</strong></p>
+<ol><li><strong>Target Disk Mode</strong> &#8211; (T)</li><li><strong>Netboot</strong> (N) &#8211; (<em>Remember Netboot?</em>)</li><li><strong>Single User Mode</strong> &#8211; (Command S)</li><li><strong>Verbose Mode</strong> &#8211; (Command V)</li><li><strong>Eject CD-ROM or DVD</strong> &#8211; (Eject Key)</li><li><strong>Safe Mode</strong> &#8211; (Shift Key)</li><li><strong>Reset PRAM</strong> &#8211; (Option-Command-P-R)</li><li><strong>Hardware Diagnostics</strong> &#8211; (D)</li></ol>
+<p><strong>The following startup options will work, but you will be prompted for the firmware password.</strong></p>
+<ol><li><strong>Recovery Mode</strong> &#8211; (Command R)</li><li><strong>Internet Recovery</strong> &#8211; (<em>Command Option R</em> or <em>Command Option Shift R</em>)</li></ol>
+<p>If you have the firmware password enabled and you hear someone say &#8220;I reset the PRAM&#8221; &#8230;. NOPE!!!</p>
+<h2 class="wp-block-heading" id="2-what-are-the-differences-in-firmware-passwords-from-the-following-years-2006-2010-2011-2017-2018-2020">2. What are the differences in firmware passwords from the following years &#8211; (2006-2010), (2011-2017) &amp; (2018-2020)?</h2>
+<ol><li>(2006-2010) &#8211; The firmware password could be removed by removing the battery, one stick of ram, and resetting the PRAM 3 times.</li><li>(2011-2017) Apple changed this when they soldered the memory to the logic board. The only way to remove the firmware password was to contact Apple.</li><li>(2018-2020) Apple added the T2 security chip. The chip runs an operating system called BridgeOS. <a href="https://mrmacintosh.com/how-to-restore-bridgeos-on-a-t2-mac-how-to-put-a-mac-into-dfu-mode/" target="_blank" rel="noreferrer noopener">This OS software can now be re-installed or updated using a 2nd Mac and Apple Configurator 2.</a> You now need to be an admin user that has a SecureToken to access the Startup Security Utility menu to set and remove the firmware password.</li></ol>
+<h2 class="wp-block-heading" id="3-how-do-you-set-the-firmware-password">3. How do you set the firmware password?</h2>
+<p>The firmware password can be set in three different ways.</p>
+<p><a href="https://support.apple.com/en-us/HT204455" target="_blank" rel="noreferrer noopener">https://support.apple.com/en-us/HT204455</a></p>
+<ol><li><strong>Enable from macOS Recovery.</strong></li></ol>
+<ol><li><a href="https://support.apple.com/kb/HT201314">Start up from macOS Recovery</a>.</li><li>When the utilities window appears,&nbsp;click Utilities in the menu bar, then choose Startup Security Utility or Firmware Password Utility.</li><li>Click Turn On Firmware Password.</li><li>Enter a firmware password in the fields provided, then click Set Password.&nbsp;<a href="https://support.apple.com/en-us/HT204455#forgot">Remember this password</a>.</li><li>Quit&nbsp;the utility, then choose Apple menu &gt; Restart.</li></ol>
+<p>2. <strong>Use the <code>firmwarepasswd</code> binary</strong> &#8211; <code>sudo firmwarepasswd -setpasswd</code></p>
+<p>3. <strong>Turn on &#8220;Find My&#8221; through iCloud</strong>, which enables the firmware password &amp; Activation Lock.</p>
+<h2 class="wp-block-heading" id="4-how-to-enable-disable-firmware-password-in-macos">4. How to Enable &amp; Disable Firmware Password in macOS?</h2>
+<p>You can enable and disable the firmware password inside macOS using terminal.app </p>
+<ul><li>1. <code>sudo firmwarepasswd -setpasswd</code> = Set a new password</li><li>2. <code>sudo firmwarepasswd -check</code> = Check whether a password is set</li><li>3. <code>sudo firmwarepasswd -verify</code> = Verify your password</li><li>4. <code>sudo firmwarepasswd -delete</code> = Disable the password</li></ul>
+<h2 class="wp-block-heading" id="5-what-can-you-do-if-you-forget-the-frmware-password">5. What can you do if you forget the frmware password?</h2>
+<p>You will need to contact Apple. Apple will verify proof of ownership and also ask to verify your identity.</p>
+<p>Let&#8217;s say a person sold you a Mac with a firmware password on craigslist. Sometime later you need to enter macOS recovery, only to find the firmware lock. You are out of luck if you have 2011-2017 Mac. You will not be able to find the previous owner and you do not have proof of ownership.</p>
+<h2 class="wp-block-heading" id="6-how-to-remove-the-firmware-password-with-apple-support">6. How to remove the firmware password with Apple Support.</h2>
+<p>If you have proof of ownership, Apple can remove the firmware password and retain your data for Mac Devices from 2011-2020. They will walk you through a process (<strong>Shift-Control-Option-Command-S</strong>) that will show you a code that you can give the Apple support agent. The agent will use that code to send you a file so you can create a USB boot disk that will remove the firmware password.</p>
+<p>You can take a look at this great article for a super deep dive into the firmware password setup. &gt; <a href="https://reverse.put.as/2016/06/25/apple-efi-firmware-passwords-and-the-scbo-myth/" target="_blank" rel="noreferrer noopener">https://reverse.put.as/2016/06/25/apple-efi-firmware-passwords-and-the-scbo-myth/</a></p>
+<h2 class="wp-block-heading" id="7-removing-the-firmware-password-on-a-t2-mac-with-apple-configurator-2">7. Removing the firmware password on a T2 Mac with Apple Configurator 2.</h2>
+<p>Sorry that you had to scroll this far to get to the point of this article. With all the talk about how the firmware password option was removed from M1 Mac Devices, I wanted to explore a little history first.</p>
+<p>If you need to remove the Firmware password from a T2 Mac, all you need to do is Restore BridgeOS with a 2nd Mac and Apple Configurator 2.</p>
+<p>What does an Apple Configurator 2 &#8220;Restore&#8221; do on a T2 Mac?</p>
+<ol><li>Erase the entire SSD (Macintosh HD &amp; macOS Recovery)</li><li>Clear Saved NVRAM Settings i.e stored WIFI</li><li>Reset any previous Secure Boot Settings back to default</li><li>Reinstall BridgeOS with the latest version available from Apple.</li><li><strong>Remove the Firmware Password, if it was previously set.</strong></li></ol>
+<p>NOTE!!!! This only works with a &#8220;RESTORE FULL ERASE&#8221; not a &#8220;Revive&#8221;. A revive will retain your data and only reinstall BridgeOS. The option will not remove your firmware password.</p>
+<p>You can follow my instructions here &gt; <a href="https://mrmacintosh.com/how-to-restore-bridgeos-on-a-t2-mac-how-to-put-a-mac-into-dfu-mode/" target="_blank" rel="noreferrer noopener">https://mrmacintosh.com/how-to-restore-bridgeos-on-a-t2-mac-how-to-put-a-mac-into-dfu-mode/</a></p>
+<p>This process is very close to the new M1 Apple Silicon Mac &#8220;Erase Mac Process&#8221; The difference is that macOS Recovery is still available after the process so you can easily reinstall macOS.</p>
+<h2 class="wp-block-heading" id="8-how-long-was-this-new-way-possible-does-applecare-even-know-about-this">8. How long was this new way possible? Does AppleCare even know about this?</h2>
+<p>I am always testing new ways to break and fix macOS. When I first confirmed that this new way worked, I was pretty surprised to say the least. </p>
+<p>To find out, I tested with Apple Configurator 2 version 2.7.1 from 2019.</p>
+<p>Yup, worked</p>
+<p>It is very possible that AC2 was removing the firmware password during the BridgeOS restore since the very beginning.</p>
+<p>After all this time, did AppleCare even know about this option? Apple&#8217;s own instructions only refer to the steps to contact CSS support to remove the password via firmware hash / USB drive.</p>
+<h2 class="wp-block-heading" id="9-what-does-this-mean-for-education-small-large-companies-home-users-computer-recyclers-and-criminals">9. What does this mean for education, small &amp; large companies, home users, computer recyclers, and criminals?</h2>
+<p>Let&#8217;s go over a few situations. </p>
+<p><strong>This new process does NOT disable or remove Activation Lock</strong>.</p>
+<p><strong>If you use the firmware password to protect your data?</strong> &#8211; Technically you are fine because the AC2 Restore process will remove the firmware password &amp; erase all of your data.</p>
+<p><strong>If you are a small business or education institution that is <strong>relying on the firmware password</strong></strong> <strong>but does not have Activation Lock enabled</strong>. &#8211; You are most likely trying to prevent students or employees from stealing the Mac and then erasing your configuration and reinstalling macOS. The other problem (unlike iOS) a person can bypass the Mobile device management screen. In this case, the Mac is long gone.</p>
+<p><strong>If you are a computer reseller or recycler.</strong> This is GREAT news for you. You can now wipe the firmware password and reinstall macOS.</p>
+<h2 class="wp-block-heading" id="10-what-does-apple-think-about-this">10. What does Apple think about this?</h2>
+<p>I reached out to Apple and asked them. The response was that this is expected.</p>
+<p>Apple recommends enabling Activation Lock on Macs with the T2 security chip (2018-2020)</p>
+<h2 class="wp-block-heading" id="11-how-can-i-protect-my-data-on-an-intel-and-m1-mac">11. How can I protect my Data on an Intel and M1 Mac?</h2>
+<p>I agree with Apple&#8217;s recommendation, enable Activation Lock.</p>
+<p>Additionally, you should also enable FileVault 2.</p>
+<p>Enabling FileVault on a T2 Mac with macOS Catalina or newer will prevent an unwanted user from accessing your data in recovery. </p>
+<p>If you didn&#8217;t turn on a firmware password and did not enable FileVault Encryption, your data is WIDE open in macOS recovery. One interesting note, if FV2 is not enabled you will still be prompted for a password in Target Disk Mode.</p>
+<div class="cb_p6_patreon_button" style="text-align:center !important;margin-top:15px;margin-bottom:15px;"><div class="cb_p6_message_over_post_button" style="font-size:24px;margin-top:10px;margin-bottom:10px;">Liked it? Take a second to support Mr. Macintosh on Patreon!</div><a rel="nofollow" href="https://www.patreon.com/mrmacintosh?utm_content=post_button&utm_medium=patron_button_and_widgets_plugin&utm_campaign=&utm_term=&utm_source=https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/" aria-label="Click to become a patron at Patreon!"><img style="margin-top: 10px;margin-bottom: 10px;max-width:200px;width:100%;height:auto;" src="https://mrmacintosh.com/wp-content/plugins/patron-button-and-widgets-by-codebard/images/become_a_patron_button.png" alt="Become a patron at Patreon!" data-lazy-src="https://mrmacintosh.com/wp-content/plugins/patron-button-and-widgets-by-codebard/images/become_a_patron_button.png?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class=" jetpack-lazy-image"><noscript><img data-lazy-fallback="1" style="margin-top: 10px;margin-bottom: 10px;max-width:200px;width:100%;height:auto;" src="https://mrmacintosh.com/wp-content/plugins/patron-button-and-widgets-by-codebard/images/become_a_patron_button.png" alt="Become a patron at Patreon!" /></noscript></a></div> </div>
+<footer class="entry-footer">
+<span class="byline"><span class="author vcard"><img alt src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=49&#038;d=mm&#038;r=g" class="avatar avatar-49 photo jetpack-lazy-image" height="49" width="49" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=98&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=49&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=49&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' loading='lazy' decoding='async' /></noscript><span class="screen-reader-text">Author </span> <a class="url fn n" href="https://mrmacintosh.com/author/mr-macintosh/">Mr. Macintosh</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/" rel="bookmark"><time class="entry-date published" datetime="2021-03-16T01:31:04-05:00">March 16, 2021</time><time class="updated" datetime="2022-02-21T20:53:44-06:00">February 21, 2022</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://mrmacintosh.com/category/macadmins/" rel="category tag">#MacAdmins</a>, <a href="https://mrmacintosh.com/category/10-15-catalina/" rel="category tag">10.15 Catalina</a>, <a href="https://mrmacintosh.com/category/11-0-big-sur/" rel="category tag">11.0 Big Sur</a>, <a href="https://mrmacintosh.com/category/apple-configurator-2/" rel="category tag">Apple Configurator 2</a>, <a href="https://mrmacintosh.com/category/apple-documentation/" rel="category tag">Apple Documentation</a>, <a href="https://mrmacintosh.com/category/bridgeos-ibridge/" rel="category tag">BridgeOS / iBridge</a>, <a href="https://mrmacintosh.com/category/dfu-mode/" rel="category tag">DFU Mode</a>, <a href="https://mrmacintosh.com/category/enterprise-content/" rel="category tag">Enterprise Content</a>, <a href="https://mrmacintosh.com/category/firmware-password/" rel="category tag">Firmware Password</a>, <a href="https://mrmacintosh.com/category/forgot-password/" rel="category tag">Forgot Password</a>, <a href="https://mrmacintosh.com/category/mac-dfu-mode/" rel="category tag">Mac DFU mode</a>, <a href="https://mrmacintosh.com/category/macos-recovery/" rel="category tag">macOS Recovery</a></span> </footer>
+</article>
+<div id="comments" class="comments-area">
+<h2 class="comments-title">
+20 thoughts on &ldquo;How to Remove Mac Firmware Password + New way if you have a 2018-2020 T2 Mac!&rdquo; </h2>
+<ol class="comment-list">
+<li id="comment-31013" class="comment even thread-even depth-1">
+<article id="div-comment-31013" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/6c8806271186f65dcf5d0d000d58ac35?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/6c8806271186f65dcf5d0d000d58ac35?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/6c8806271186f65dcf5d0d000d58ac35?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/6c8806271186f65dcf5d0d000d58ac35?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6c8806271186f65dcf5d0d000d58ac35?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Muhammad Fawzan</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-31013"><time datetime="2021-10-26T08:28:12-05:00">October 26, 2021 at 8:28 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>My Mac 2010 I have purchased used Mac now my son has done format now for is installion it is asking firmware password what Ican please reply me</p>
+</div>
+</article>
+</li>
+<li id="comment-29586" class="comment odd alt thread-odd thread-alt depth-1">
+<article id="div-comment-29586" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/40b51e70fa8e7ac272fc564935722e6e?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/40b51e70fa8e7ac272fc564935722e6e?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/40b51e70fa8e7ac272fc564935722e6e?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/40b51e70fa8e7ac272fc564935722e6e?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/40b51e70fa8e7ac272fc564935722e6e?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Cseh József</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-29586"><time datetime="2021-10-03T09:05:36-05:00">October 3, 2021 at 9:05 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Xan egy 2017 mac 21.5 4k retina számítógépem bekapcsoltam és egy lakat jelenik meg kéri a jelszót firmware jelszót nem tudom nem tudom használni a mac gépet</p>
+</div>
+</article>
+</li>
+<li id="comment-29583" class="comment even thread-even depth-1 parent">
+<article id="div-comment-29583" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/18126beb3930ebce78aa1ce0e017769b?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/18126beb3930ebce78aa1ce0e017769b?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/18126beb3930ebce78aa1ce0e017769b?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/18126beb3930ebce78aa1ce0e017769b?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/18126beb3930ebce78aa1ce0e017769b?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Nav</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-29583"><time datetime="2021-10-03T03:45:23-05:00">October 3, 2021 at 3:45 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>HI,<br/>
+i have got a 2019 macbook pro laptop was working Absolutely fine until last week ,now it turns on trying to load os but stuck on loading screen , also some time it gives kernel error .i have tried to revive through another mac with ac2 then restore .now the faulty laptop started giving folder sign ,tried to command n R connected to internet recovery. Now after searching for recovery its trying to load recovery but again restarts and gives folder sign again<br/>
+any suggestions please<br/>
+Regards</p>
+</div>
+</article>
+<ol class="children">
+<li id="comment-29597" class="comment byuser comment-author-mr-macintosh bypostauthor odd alt depth-2">
+<article id="div-comment-29597" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn"><a href="https://MrMacintosh.com" class="url" rel="ugc">Mr. Macintosh</a></b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-29597"><time datetime="2021-10-03T23:34:50-05:00">October 3, 2021 at 11:34 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Nav, are you able to get into internet recovery with Command Option R ?</p>
+</div>
+</article>
+</li>
+</ol>
+</li>
+<li id="comment-29568" class="comment even thread-odd thread-alt depth-1">
+<article id="div-comment-29568" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/993e438a3ce93bba5791012600bacc11?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/993e438a3ce93bba5791012600bacc11?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/993e438a3ce93bba5791012600bacc11?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/993e438a3ce93bba5791012600bacc11?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/993e438a3ce93bba5791012600bacc11?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Clanf</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-29568"><time datetime="2021-10-02T04:08:07-05:00">October 2, 2021 at 4:08 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>How would I be able to Backup&amp; restore the mac Installation with all its accounts and data after the full erase?</p>
+</div>
+</article>
+</li>
+<li id="comment-28859" class="comment odd alt thread-even depth-1 parent">
+<article id="div-comment-28859" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/8483a5e3223d4cca4fda15579826e07a?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/8483a5e3223d4cca4fda15579826e07a?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/8483a5e3223d4cca4fda15579826e07a?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/8483a5e3223d4cca4fda15579826e07a?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/8483a5e3223d4cca4fda15579826e07a?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Rob</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-28859"><time datetime="2021-09-19T19:02:22-05:00">September 19, 2021 at 7:02 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>How can you remove the firmware password if you know it, but the recovery partition offers no options for it. All I get now is a prompt to log into my iTunes account, then it asks me to use an admin account, but shows none. There is no option for terminal or the normal utility where I originally set the password.</p>
+</div>
+</article>
+<ol class="children">
+<li id="comment-28933" class="comment byuser comment-author-mr-macintosh bypostauthor even depth-2">
+<article id="div-comment-28933" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn"><a href="https://MrMacintosh.com" class="url" rel="ugc">Mr. Macintosh</a></b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-28933"><time datetime="2021-09-21T15:30:08-05:00">September 21, 2021 at 3:30 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Which version of macOS Rob?</p>
+</div>
+</article>
+</li>
+</ol>
+</li>
+<li id="comment-28800" class="comment odd alt thread-odd thread-alt depth-1">
+<article id="div-comment-28800" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/9dad29bad79ea2addc079214ab63a7b9?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/9dad29bad79ea2addc079214ab63a7b9?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/9dad29bad79ea2addc079214ab63a7b9?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/9dad29bad79ea2addc079214ab63a7b9?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9dad29bad79ea2addc079214ab63a7b9?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Mahmoud</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-28800"><time datetime="2021-09-18T11:26:23-05:00">September 18, 2021 at 11:26 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>How does it work on iMac 2020</p>
+</div>
+</article>
+</li>
+<li id="comment-28490" class="comment even thread-even depth-1">
+<article id="div-comment-28490" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/03c9aae13bc2596b0295dc9e4557fe62?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/03c9aae13bc2596b0295dc9e4557fe62?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/03c9aae13bc2596b0295dc9e4557fe62?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/03c9aae13bc2596b0295dc9e4557fe62?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/03c9aae13bc2596b0295dc9e4557fe62?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Mahmoud Abdelhadi</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-28490"><time datetime="2021-09-15T09:29:49-05:00">September 15, 2021 at 9:29 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Can you please point me to where I can remove the firmware password on my 2011 Macbook Pro? I really don&#8217;t know how it was activated I had the laptop for 11 years but I lost the proof of purchase so Apple won&#8217;t help me.</p>
+</div>
+</article>
+</li>
+<li id="comment-27135" class="comment odd alt thread-odd thread-alt depth-1 parent">
+<article id="div-comment-27135" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/303d6e88ba1c5d6e9001497087ceef55?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/303d6e88ba1c5d6e9001497087ceef55?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/303d6e88ba1c5d6e9001497087ceef55?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/303d6e88ba1c5d6e9001497087ceef55?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/303d6e88ba1c5d6e9001497087ceef55?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn"><a href="http://www.stamcarphotography.com" class="url" rel="ugc external nofollow">Johannes</a></b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-27135"><time datetime="2021-08-24T11:11:33-05:00">August 24, 2021 at 11:11 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Hello, I have inherited an iMac pro 2017 from my deceased father, unfortunately no passwords or anything (eg e-mail accesses his Apple ID, invoice of the iMac Pro), now the activation lock is active and I can not do anything with the iMac Pro. Apple can not help me here because I have not found an invoice, is there a way to lift this activation lock? Please excuse my bad English!</p>
+</div>
+</article>
+<ol class="children">
+<li id="comment-28617" class="comment even depth-2">
+<article id="div-comment-28617" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/2a5afb352ef175a2c9fa5e235e823b38?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/2a5afb352ef175a2c9fa5e235e823b38?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/2a5afb352ef175a2c9fa5e235e823b38?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/2a5afb352ef175a2c9fa5e235e823b38?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/2a5afb352ef175a2c9fa5e235e823b38?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">G</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-28617"><time datetime="2021-09-16T02:45:54-05:00">September 16, 2021 at 2:45 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>2017 Imac efi password is still stored in the bios. its possible to unlock via spi connector many places can do this. This imac does not have T2</p>
+</div>
+</article>
+</li>
+</ol>
+</li>
+<li id="comment-26810" class="comment odd alt thread-even depth-1 parent">
+<article id="div-comment-26810" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/e69508877398255eaf70be0790a8bfc6?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/e69508877398255eaf70be0790a8bfc6?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/e69508877398255eaf70be0790a8bfc6?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/e69508877398255eaf70be0790a8bfc6?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e69508877398255eaf70be0790a8bfc6?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">bgc</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-26810"><time datetime="2021-08-17T02:07:30-05:00">August 17, 2021 at 2:07 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Memory is *not* soldered in on 2012 Macbooks.</p>
+</div>
+</article>
+<ol class="children">
+<li id="comment-26878" class="comment byuser comment-author-mr-macintosh bypostauthor even depth-2">
+<article id="div-comment-26878" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/93408cde43ea14f222ebe5a16ba50810?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn"><a href="https://MrMacintosh.com" class="url" rel="ugc">Mr. Macintosh</a></b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-26878"><time datetime="2021-08-17T21:10:40-05:00">August 17, 2021 at 9:10 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Correct it is not solderded on the fatbook pro version but is on the retina version.</p>
+</div>
+</article>
+</li>
+</ol>
+</li>
+<li id="comment-21960" class="comment odd alt thread-odd thread-alt depth-1">
+<article id="div-comment-21960" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/7e687f667d58b2460374fa8d9243f049?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/7e687f667d58b2460374fa8d9243f049?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/7e687f667d58b2460374fa8d9243f049?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/7e687f667d58b2460374fa8d9243f049?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7e687f667d58b2460374fa8d9243f049?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">sean</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-21960"><time datetime="2021-06-28T17:03:59-05:00">June 28, 2021 at 5:03 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Can you please do a video or write on how to remove firmware password for MacBook 2011-2017</p>
+</div>
+</article>
+</li>
+<li id="comment-19066" class="comment even thread-even depth-1">
+<article id="div-comment-19066" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/5d40b6231b7f28a795aa877e6c844c78?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/5d40b6231b7f28a795aa877e6c844c78?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/5d40b6231b7f28a795aa877e6c844c78?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/5d40b6231b7f28a795aa877e6c844c78?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5d40b6231b7f28a795aa877e6c844c78?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Doron Wabanie</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-19066"><time datetime="2021-05-20T17:47:17-05:00">May 20, 2021 at 5:47 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Need firmware password for my Macbook Pro 2012. Bought it second hand, so i do not have the original receipt. Please help.</p>
+</div>
+</article>
+</li>
+<li id="comment-15672" class="comment odd alt thread-odd thread-alt depth-1 parent">
+<article id="div-comment-15672" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/09a116838d0350fd48d9b2d8ab0039d6?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/09a116838d0350fd48d9b2d8ab0039d6?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/09a116838d0350fd48d9b2d8ab0039d6?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/09a116838d0350fd48d9b2d8ab0039d6?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/09a116838d0350fd48d9b2d8ab0039d6?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Ryan</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-15672"><time datetime="2021-03-17T00:40:42-05:00">March 17, 2021 at 12:40 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>I recently purchased an M1 MacBook Pro. When I discovered there was no firmware password, I found it takes less than 30 seconds to get to recovery and erase all data on the drive. I do have activation lock on but is there a way to lock it down to prevent someone from wiping my hard drive so easily?</p>
+</div>
+</article>
+<ol class="children">
+<li id="comment-15807" class="comment even depth-2">
+<article id="div-comment-15807" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/4c764642738dd78b1fccd7d66f36c8e7?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/4c764642738dd78b1fccd7d66f36c8e7?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/4c764642738dd78b1fccd7d66f36c8e7?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/4c764642738dd78b1fccd7d66f36c8e7?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/4c764642738dd78b1fccd7d66f36c8e7?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Hyram</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-15807"><time datetime="2021-03-19T05:29:16-05:00">March 19, 2021 at 5:29 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Unfortunately not, and it is a _major_ bone of contention especially with fleet management and org security requirements. One can only hope that constant pressure on Apple will make them change this behaviour in a future macOS for the M1 line, because at the moment this renders all three models as a non-choice for company purchases.</p>
+</div>
+</article>
+</li>
+<li id="comment-18737" class="comment odd alt depth-2">
+<article id="div-comment-18737" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn">Sam</b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-18737"><time datetime="2021-05-07T12:33:29-05:00">May 7, 2021 at 12:33 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Hi I have a problem with my laptop MacBook Pro it has a padlock firmware problem 2017 MacBook Pro please help</p>
+</div>
+</article>
+</li>
+</ol>
+</li>
+<li id="comment-15659" class="comment even thread-even depth-1 parent">
+<article id="div-comment-15659" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/1d3b21771c9811d64f0dfa3792d07664?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/1d3b21771c9811d64f0dfa3792d07664?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/1d3b21771c9811d64f0dfa3792d07664?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/1d3b21771c9811d64f0dfa3792d07664?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1d3b21771c9811d64f0dfa3792d07664?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn"><a href="https://github.com/univ-of-utah-marriott-library-apple/firmware_password_manager" class="url" rel="ugc external nofollow">Richard Glaser</a></b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-15659"><time datetime="2021-03-16T11:37:24-05:00">March 16, 2021 at 11:37 am</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>FYI:</p>
+<p>We have a popular Python script to help Macintosh administrators manage the firmware passwords across your fleet.</p>
+</div>
+</article>
+<ol class="children">
+<li id="comment-18738" class="comment odd alt depth-2">
+<article id="div-comment-18738" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt src="https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=42&#038;d=mm&#038;r=g" class="avatar avatar-42 photo jetpack-lazy-image" height="42" width="42" decoding="async" data-lazy-srcset="https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=84&#038;d=mm&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=42&amp;is-pending-load=1#038;d=mm&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" alt='' src='https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f6ed18d17780e0ea5c64312321823856?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async' /></noscript> <b class="fn"><a href="https://Google" class="url" rel="ugc external nofollow">Sam</a></b> <span class="says">says:</span> </div>
+<div class="comment-metadata">
+<a href="https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/#comment-18738"><time datetime="2021-05-07T12:35:31-05:00">May 7, 2021 at 12:35 pm</time></a> </div>
+</footer>
+<div class="comment-content">
+<p>Hi I have a problem with my laptop MacBook Pro it has a padlock firmware problem 2017 MacBook Pro please help I have proof of perching!!</p>
+</div>
+</article>
+</li>
+</ol>
+</li>
+</ol>
+<p class="no-comments">Comments are closed.</p>
+</div>
+<nav class="navigation post-navigation" aria-label="Posts">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://mrmacintosh.com/macos-big-sur-11-2-3-update-20d91-is-live-whats-new/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">macOS Big Sur 11.2.3 Update (20D91) is Live! What’s New?</span></a></div><div class="nav-next"><a href="https://mrmacintosh.com/macos-big-sur-full-installer-database-download-directly-from-apple/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">macOS Big Sur Full Installer Database. Download Directly from Apple!</span></a></div></div>
+</nav>
+</main>
+<aside id="content-bottom-widgets" class="content-bottom-widgets">
+<div class="widget-area">
+<section id="rss-3" class="widget widget_rss"><h2 class="widget-title"><a class="rsswidget rss-widget-feed" href="https://mrmacintosh.com/feed"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://mrmacintosh.com/wp-includes/images/rss.png" alt="RSS" loading="lazy" /></a> <a class="rsswidget rss-widget-title" href="https://mrmacintosh.com/">Mr. Macintosh &#8211; Your one stop destination for all things Apple IT, #MacAdmins and #MacSupport</a></h2><nav aria-label="Mr. Macintosh &#8211; Your one stop destination for all things Apple IT, #MacAdmins and #MacSupport"><ul><li><a class="rsswidget" href="https://mrmacintosh.com/macos-ventura-13-3-1-update-22e261-whats-new/">macOS Ventura 13.3.1 Update (22E261)! Emergency Security Update?</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/wwdc23-wallpaper-desktop-images-4k-downloads/">WWDC23 Wallpaper / Desktop Images 4k Downloads</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/macos-ventura-13-3-update-22e252-whats-new/">macOS Ventura 13.3 Update (22E252)! What’s New?</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/macos-ventura-13-2-1-update-22d68-whats-new/">macOS Ventura 13.2.1 Update (22D68)! What’s New?</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/macos-ventura-13-2-update-22d49-whats-new/">macOS Ventura 13.2 Update (22D49)! What’s New?</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/macos-rapid-security-response-version-database/">macOS Rapid Security Response Update Version Database</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/macos-ventura-13-1-22c65-update-whats-new/">macOS Ventura 13.1 (22C65) Update! What’s New?</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/macos-monterey-12-6-2-21g320-update-whats-new/">macOS Monterey 12.6.2 (21G320) Update! What’s New?</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/macos-big-sur-11-7-2-20g1020-update-whats-new/">macOS Big Sur 11.7.2 (20G1020) Update! What’s New?</a></li><li><a class="rsswidget" href="https://mrmacintosh.com/cant-accept-icloud-terms-after-macos-install-agree-button-greyed-out/">Can’t Accept iCloud Terms after macOS Install. Agree Button Greyed Out!</a></li></ul></nav></section> </div>
+</aside>
+</div>
+<aside id="secondary" class="sidebar widget-area">
+<section id="patreon_sidebar_site_widget-2" class="widget widget_patreon_sidebar_site_widget"> <h2 class="widget-title">Mr. Macintosh Patreon</h2>
+<div class="cb_p6_patreon_site_widget" style="text-align:center !important;"><a rel="nofollow" href="https://www.patreon.com/mrmacintosh?utm_content=site_sidebar_widget&utm_medium=patron_button_and_widgets_plugin&utm_campaign=&utm_term=&utm_source=https://mrmacintosh.com/how-to-remove-mac-firmware-password-new-way-if-you-have-a-2018-2020-t2-mac/" aria-label="Click to become a patron at Patreon!"><img style="margin-top: 10px;margin-bottom: 10px;max-width:200px;width:100%;height:auto;" src="https://mrmacintosh.com/wp-content/plugins/patron-button-and-widgets-by-codebard/images/become_a_patron_button.png" alt="Become a patron at Patreon!"></a></div>
+</section> <section id="search-4" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://mrmacintosh.com/">
+<label>
+<span class="screen-reader-text">
+Search for: </span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value name="s" />
+</label>
+<button type="submit" class="search-submit"><span class="screen-reader-text">
+Search </span></button>
+</form>
+</section><div><label>Support Mr. Macintosh</label><br/><form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_donations" /><input type="hidden" name="business" value="mrmacintoshbis@gmail.com" /><input type="hidden" name="item_name" value="Support Mr. Macintosh" /><input type="hidden" name="item_number" value /><input type="hidden" name="currency_code" value="USD" /><input type="hidden" name="amount" id="amount_aa340c934fbd848de8c5d8bf8cff7efc" value /><input type="hidden" name="no_note" value="0"><input type="hidden" name="no_shipping" value="1"><input type="hidden" name="notify_url" value="https://mrmacintosh.com/wp-admin/admin-post.php?action=add_wpedon_button_ipn"><input type="hidden" name="lc" value="EN_US"><input type="hidden" name="bn" value="WPPlugin_SP"><input type="hidden" name="return" value="https://mrmacintosh.com/support-donation-thank-you/" /><input type="hidden" name="cancel_return" value /><input class="wpedon_paypalbuttonimage" type="image" src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png" border="0" name="submit" alt="Make your payments with PayPal. It is free, secure, effective." style="border: none;"><img alt border="0" style="border:none;display:none;" src="https://www.paypal.com/EN_US/i/scr/pixel.gif" width="1" height="1"></form></div></section><section id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widget-title">Navigation</h2><nav class="menu-home-container" aria-label="Navigation"><ul id="menu-home-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-61"><a href="https://mrmacintosh.com/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://mrmacintosh.com/contact-me/">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6236"><a href="https://twitter.com/ClassicII_MrMac">Twitter</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3608"><a href="https://www.youtube.com/channel/UC7FRPWLwRlhORhFHHywfqAg">YouTube</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3824"><a href="https://mrmacintosh.com/apple-silicon-m1-full-macos-restore-ipsw-firmware-files-database/">M1/M2 IPSW Download</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4950"><a href="https://mrmacintosh.com/macos-ventura-13-full-installer-database-download-directly-from-apple/">Ventura Installers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4952"><a href="https://mrmacintosh.com/macos-12-monterey-full-installer-database-download-directly-from-apple/">Monterey Installers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1151"><a href="https://mrmacintosh.com/macos-big-sur-full-installer-database-download-directly-from-apple/">Big Sur Installers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4550"><a href="https://mrmacintosh.com/how-to-download-macos-catalina-mojave-or-high-sierra-full-installers/">Download macOS</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7267"><a href="https://mrmacintosh.com/macos-safari-full-installer-database-download-directly-from-apple/">Download Safari</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4558"><a href="https://mrmacintosh.com/can-i-upgrade-or-downgrade-macos-every-mac-from-2006-2020/">Downgrade macOS?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7256"><a href="https://mrmacintosh.com/restore-macos-firmware-on-an-apple-silicon-mac-boot-to-dfu-mode/">M1/M2 DFU Restore</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4554"><a href="https://mrmacintosh.com/how-to-restore-bridgeos-on-a-t2-mac-how-to-put-a-mac-into-dfu-mode/">T2 BridgeOS DFU Restore</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4555"><a href="https://mrmacintosh.com/list-of-mac-boardid-deviceid-model-identifiers-machine-models/">Mac Model &#038; BoardID</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7219"><a href="https://mrmacintosh.com/macos-rapid-security-response-version-database/">Ventura RSR Updates</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4552"><a href="https://mrmacintosh.com/macos-ventura-13-4-update-22f66-whats-new-rip-seedutil/">Ventura 13.4 Update</a></li>
+</ul></nav></section><section id="block-2" class="widget widget_block">
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+<a class="twitter-timeline" data-width="840" data-height="1000" data-dnt="true" href="https://twitter.com/ClassicII_MrMac?ref_src=twsrc%5Etfw">Tweets by ClassicII_MrMac</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+</section><section id="archives-4" class="widget widget_archive"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+<ul>
+<li><a href="https://mrmacintosh.com/2023/05/">May 2023</a></li>
+<li><a href="https://mrmacintosh.com/2023/04/">April 2023</a></li>
+<li><a href="https://mrmacintosh.com/2023/03/">March 2023</a></li>
+<li><a href="https://mrmacintosh.com/2023/02/">February 2023</a></li>
+<li><a href="https://mrmacintosh.com/2023/01/">January 2023</a></li>
+<li><a href="https://mrmacintosh.com/2022/12/">December 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/11/">November 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/10/">October 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/09/">September 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/08/">August 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/07/">July 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/06/">June 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/05/">May 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/03/">March 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/02/">February 2022</a></li>
+<li><a href="https://mrmacintosh.com/2022/01/">January 2022</a></li>
+<li><a href="https://mrmacintosh.com/2021/12/">December 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/11/">November 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/10/">October 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/09/">September 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/08/">August 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/07/">July 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/06/">June 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/05/">May 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/04/">April 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/03/">March 2021</a></li>
+<li><a href="https://mrmacintosh.com/2021/02/">February 2021</a></li>
+<li><a href="https://mrmacintosh.com/2020/12/">December 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/11/">November 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/10/">October 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/09/">September 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/08/">August 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/07/">July 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/06/">June 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/05/">May 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/04/">April 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/03/">March 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/02/">February 2020</a></li>
+<li><a href="https://mrmacintosh.com/2020/01/">January 2020</a></li>
+<li><a href="https://mrmacintosh.com/2019/12/">December 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/11/">November 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/10/">October 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/09/">September 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/08/">August 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/07/">July 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/06/">June 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/05/">May 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/04/">April 2019</a></li>
+<li><a href="https://mrmacintosh.com/2019/03/">March 2019</a></li>
+</ul>
+</nav></section><section id="categories-4" class="widget widget_categories"><h2 class="widget-title">Categories</h2><nav aria-label="Categories">
+<ul>
+<li class="cat-item cat-item-14"><a href="https://mrmacintosh.com/category/macadmins/">#MacAdmins</a>
+</li>
+<li class="cat-item cat-item-35"><a href="https://mrmacintosh.com/category/macedu/">#MacEDU</a>
+</li>
+<li class="cat-item cat-item-15"><a href="https://mrmacintosh.com/category/macsupport/">#MacSupport</a>
+</li>
+<li class="cat-item cat-item-12"><a href="https://mrmacintosh.com/category/10-10-yosemite/">10.10 Yosemite</a>
+</li>
+<li class="cat-item cat-item-11"><a href="https://mrmacintosh.com/category/10-11-el-capitan/">10.11 El Capitan</a>
+</li>
+<li class="cat-item cat-item-10"><a href="https://mrmacintosh.com/category/10-12-sierra/">10.12 Sierra</a>
+</li>
+<li class="cat-item cat-item-9"><a href="https://mrmacintosh.com/category/10-13-high-sierra/">10.13 High Sierra</a>
+</li>
+<li class="cat-item cat-item-8"><a href="https://mrmacintosh.com/category/10-14-mojave/">10.14 Mojave</a>
+</li>
+<li class="cat-item cat-item-52"><a href="https://mrmacintosh.com/category/10-14-mojave-beta/">10.14 Mojave Beta</a>
+</li>
+<li class="cat-item cat-item-63"><a href="https://mrmacintosh.com/category/10-15-catalina/">10.15 Catalina</a>
+</li>
+<li class="cat-item cat-item-64"><a href="https://mrmacintosh.com/category/10-15-catalina-beta/">10.15 Catalina Beta</a>
+</li>
+<li class="cat-item cat-item-120"><a href="https://mrmacintosh.com/category/11-0-big-sur/">11.0 Big Sur</a>
+</li>
+<li class="cat-item cat-item-121"><a href="https://mrmacintosh.com/category/11-0-big-sur-beta/">11.0 Big Sur Beta</a>
+</li>
+<li class="cat-item cat-item-141"><a href="https://mrmacintosh.com/category/11-1-big-sur-beta/">11.1 Big Sur Beta</a>
+</li>
+<li class="cat-item cat-item-111"><a href="https://mrmacintosh.com/category/16-macbook-pro/">16&quot; Macbook Pro</a>
+</li>
+<li class="cat-item cat-item-90"><a href="https://mrmacintosh.com/category/2019-001-filevault-problem/">2019-001 FileVault Problem</a>
+</li>
+<li class="cat-item cat-item-125"><a href="https://mrmacintosh.com/category/2020-005-update-problems/">2020-005 Update Problems</a>
+</li>
+<li class="cat-item cat-item-126"><a href="https://mrmacintosh.com/category/accountsd-problem/">accountsd problem</a>
+</li>
+<li class="cat-item cat-item-20"><a href="https://mrmacintosh.com/category/active-directory/">Active Directory</a>
+</li>
+<li class="cat-item cat-item-21"><a href="https://mrmacintosh.com/category/ad-mobile-accounts/">AD Mobile Accounts</a>
+</li>
+<li class="cat-item cat-item-30"><a href="https://mrmacintosh.com/category/apfs/">APFS</a>
+</li>
+<li class="cat-item cat-item-72"><a href="https://mrmacintosh.com/category/apple-configurator-2/">Apple Configurator 2</a>
+</li>
+<li class="cat-item cat-item-54"><a href="https://mrmacintosh.com/category/apple-documentation/">Apple Documentation</a>
+</li>
+<li class="cat-item cat-item-31"><a href="https://mrmacintosh.com/category/apple-enterprise-support/">Apple Enterprise Support</a>
+</li>
+<li class="cat-item cat-item-122"><a href="https://mrmacintosh.com/category/apple-silicon/">Apple Silicon</a>
+</li>
+<li class="cat-item cat-item-84"><a href="https://mrmacintosh.com/category/avid/">AVID</a>
+</li>
+<li class="cat-item cat-item-152"><a href="https://mrmacintosh.com/category/big-sur-11-6-update/">Big Sur 11.6 Update</a>
+</li>
+<li class="cat-item cat-item-144"><a href="https://mrmacintosh.com/category/big-sur-upgrade-free-space-issue/">Big Sur Upgrade Free Space Issue</a>
+</li>
+<li class="cat-item cat-item-94"><a href="https://mrmacintosh.com/category/boardid/">BoardID</a>
+</li>
+<li class="cat-item cat-item-76"><a href="https://mrmacintosh.com/category/bridgeos-ibridge/">BridgeOS / iBridge</a>
+</li>
+<li class="cat-item cat-item-49"><a href="https://mrmacintosh.com/category/bugreport-apple-com/">BugReport.Apple.com</a>
+</li>
+<li class="cat-item cat-item-110"><a href="https://mrmacintosh.com/category/conf-freezing-issue/">Conf-Freezing-Issue</a>
+</li>
+<li class="cat-item cat-item-6"><a href="https://mrmacintosh.com/category/dep/">DEP</a>
+</li>
+<li class="cat-item cat-item-75"><a href="https://mrmacintosh.com/category/developer-content/">Developer Content</a>
+</li>
+<li class="cat-item cat-item-112"><a href="https://mrmacintosh.com/category/dfu-mode/">DFU Mode</a>
+</li>
+<li class="cat-item cat-item-113"><a href="https://mrmacintosh.com/category/downgrade-macos/">Downgrade macOS</a>
+</li>
+<li class="cat-item cat-item-132"><a href="https://mrmacintosh.com/category/dtk-mac-mini/">DTK Mac mini</a>
+</li>
+<li class="cat-item cat-item-88"><a href="https://mrmacintosh.com/category/egpu/">eGPU</a>
+</li>
+<li class="cat-item cat-item-33"><a href="https://mrmacintosh.com/category/enterprise-content/">Enterprise Content</a>
+</li>
+<li class="cat-item cat-item-124"><a href="https://mrmacintosh.com/category/feedback-assistant/">Feedback Assistant</a>
+</li>
+<li class="cat-item cat-item-115"><a href="https://mrmacintosh.com/category/filevault-2/">FileVault 2</a>
+</li>
+<li class="cat-item cat-item-145"><a href="https://mrmacintosh.com/category/firmware-password/">Firmware Password</a>
+</li>
+<li class="cat-item cat-item-51"><a href="https://mrmacintosh.com/category/forgot-password/">Forgot Password</a>
+</li>
+<li class="cat-item cat-item-61"><a href="https://mrmacintosh.com/category/forked-build/">Forked Build</a>
+</li>
+<li class="cat-item cat-item-2"><a href="https://mrmacintosh.com/category/fv2/">FV2</a>
+</li>
+<li class="cat-item cat-item-101"><a href="https://mrmacintosh.com/category/hardware-diagnostics/">Hardware Diagnostics</a>
+</li>
+<li class="cat-item cat-item-66"><a href="https://mrmacintosh.com/category/hardware-service-program/">Hardware Service Program</a>
+</li>
+<li class="cat-item cat-item-69"><a href="https://mrmacintosh.com/category/hardware-updates/">Hardware Updates</a>
+</li>
+<li class="cat-item cat-item-131"><a href="https://mrmacintosh.com/category/hp-printer-driver-problem/">HP Printer Driver Problem</a>
+</li>
+<li class="cat-item cat-item-98"><a href="https://mrmacintosh.com/category/imac/">iMac</a>
+</li>
+<li class="cat-item cat-item-99"><a href="https://mrmacintosh.com/category/imac-pro/">iMac Pro</a>
+</li>
+<li class="cat-item cat-item-102"><a href="https://mrmacintosh.com/category/internet-recovery/">Internet Recovery</a>
+</li>
+<li class="cat-item cat-item-80"><a href="https://mrmacintosh.com/category/ios/">iOS</a>
+</li>
+<li class="cat-item cat-item-135"><a href="https://mrmacintosh.com/category/ios-14-1-beta/">iOS 14.1 Beta</a>
+</li>
+<li class="cat-item cat-item-136"><a href="https://mrmacintosh.com/category/ios-14-2-beta/">iOS 14.2 Beta</a>
+</li>
+<li class="cat-item cat-item-77"><a href="https://mrmacintosh.com/category/ios-beta-13/">iOS Beta 13</a>
+</li>
+<li class="cat-item cat-item-78"><a href="https://mrmacintosh.com/category/ios-beta-13-1/">iOS Beta 13.1</a>
+</li>
+<li class="cat-item cat-item-134"><a href="https://mrmacintosh.com/category/ios-problems/">iOS Problems</a>
+</li>
+<li class="cat-item cat-item-41"><a href="https://mrmacintosh.com/category/iwork/">iWork</a>
+</li>
+<li class="cat-item cat-item-17"><a href="https://mrmacintosh.com/category/jamf/">Jamf</a>
+</li>
+<li class="cat-item cat-item-55"><a href="https://mrmacintosh.com/category/jamf-nation/">Jamf Nation</a>
+</li>
+<li class="cat-item cat-item-34"><a href="https://mrmacintosh.com/category/jamf-pro/">Jamf Pro</a>
+</li>
+<li class="cat-item cat-item-18"><a href="https://mrmacintosh.com/category/jnuc/">JNUC</a>
+</li>
+<li class="cat-item cat-item-82"><a href="https://mrmacintosh.com/category/kernel-panics/">Kernel Panics</a>
+</li>
+<li class="cat-item cat-item-93"><a href="https://mrmacintosh.com/category/keychain/">Keychain</a>
+</li>
+<li class="cat-item cat-item-38"><a href="https://mrmacintosh.com/category/keynote/">Keynote</a>
+</li>
+<li class="cat-item cat-item-48"><a href="https://mrmacintosh.com/category/local-accounts/">Local Accounts</a>
+</li>
+<li class="cat-item cat-item-108"><a href="https://mrmacintosh.com/category/log-files/">Log Files</a>
+</li>
+<li class="cat-item cat-item-146"><a href="https://mrmacintosh.com/category/m1-imac/">M1 iMac</a>
+</li>
+<li class="cat-item cat-item-130"><a href="https://mrmacintosh.com/category/mac-dfu-mode/">Mac DFU mode</a>
+</li>
+<li class="cat-item cat-item-67"><a href="https://mrmacintosh.com/category/mac-mini/">Mac Mini</a>
+</li>
+<li class="cat-item cat-item-100"><a href="https://mrmacintosh.com/category/mac-pro/">Mac Pro</a>
+</li>
+<li class="cat-item cat-item-97"><a href="https://mrmacintosh.com/category/macbook/">MacBook</a>
+</li>
+<li class="cat-item cat-item-68"><a href="https://mrmacintosh.com/category/macbook-air/">MacBook Air</a>
+</li>
+<li class="cat-item cat-item-60"><a href="https://mrmacintosh.com/category/macbook-pro/">MacBook Pro</a>
+</li>
+<li class="cat-item cat-item-65"><a href="https://mrmacintosh.com/category/macbook-pro-battery-recall/">MacBook Pro Battery Recall</a>
+</li>
+<li class="cat-item cat-item-62"><a href="https://mrmacintosh.com/category/macbook-pro-supplemental-update/">MacBook Pro Supplemental Update</a>
+</li>
+<li class="cat-item cat-item-96"><a href="https://mrmacintosh.com/category/machine-models/">Machine Models</a>
+</li>
+<li class="cat-item cat-item-149"><a href="https://mrmacintosh.com/category/macos-12-monterey/">macOS 12 Monterey</a>
+</li>
+<li class="cat-item cat-item-117"><a href="https://mrmacintosh.com/category/macos-beta/">macOS Beta</a>
+</li>
+<li class="cat-item cat-item-142"><a href="https://mrmacintosh.com/category/macos-big-sur-11-1/">macOS Big Sur 11.1</a>
+</li>
+<li class="cat-item cat-item-143"><a href="https://mrmacintosh.com/category/macos-big-sur-11-2/">macOS Big Sur 11.2</a>
+</li>
+<li class="cat-item cat-item-147"><a href="https://mrmacintosh.com/category/macos-big-sur-11-3/">macOS Big Sur 11.3</a>
+</li>
+<li class="cat-item cat-item-148"><a href="https://mrmacintosh.com/category/macos-big-sur-11-4/">macOS Big Sur 11.4</a>
+</li>
+<li class="cat-item cat-item-151"><a href="https://mrmacintosh.com/category/macos-big-sur-11-5/">macOS Big Sur 11.5</a>
+</li>
+<li class="cat-item cat-item-50"><a href="https://mrmacintosh.com/category/macos-installer/">macOS Installer</a>
+</li>
+<li class="cat-item cat-item-139"><a href="https://mrmacintosh.com/category/macos-ispw-firmware/">macOS ISPW Firmware</a>
+</li>
+<li class="cat-item cat-item-140"><a href="https://mrmacintosh.com/category/macos-recovery/">macOS Recovery</a>
+</li>
+<li class="cat-item cat-item-89"><a href="https://mrmacintosh.com/category/macos-security-update/">macOS Security Update</a>
+</li>
+<li class="cat-item cat-item-37"><a href="https://mrmacintosh.com/category/macos-update/">macOS Update</a>
+</li>
+<li class="cat-item cat-item-36"><a href="https://mrmacintosh.com/category/macos-upgrade/">macOS Upgrade</a>
+</li>
+<li class="cat-item cat-item-154"><a href="https://mrmacintosh.com/category/macos-ventura/">macOS Ventura</a>
+</li>
+<li class="cat-item cat-item-160"><a href="https://mrmacintosh.com/category/macos-ventura-13-4-update/">macOS Ventura 13.4 Update</a>
+</li>
+<li class="cat-item cat-item-155"><a href="https://mrmacintosh.com/category/macos-ventura-beta/">macOS Ventura Beta</a>
+</li>
+<li class="cat-item cat-item-150"><a href="https://mrmacintosh.com/category/macos-virtualization/">macOS Virtualization</a>
+</li>
+<li class="cat-item cat-item-53"><a href="https://mrmacintosh.com/category/macossystemstatus/">macOSSystemStatus</a>
+</li>
+<li class="cat-item cat-item-95"><a href="https://mrmacintosh.com/category/model-identifiers/">Model Identifiers</a>
+</li>
+<li class="cat-item cat-item-59"><a href="https://mrmacintosh.com/category/new-mac-hardware/">New Mac Hardware</a>
+</li>
+<li class="cat-item cat-item-47"><a href="https://mrmacintosh.com/category/notarization/">Notarization</a>
+</li>
+<li class="cat-item cat-item-85"><a href="https://mrmacintosh.com/category/notifications/">Notifications</a>
+</li>
+<li class="cat-item cat-item-39"><a href="https://mrmacintosh.com/category/numbers/">Numbers</a>
+</li>
+<li class="cat-item cat-item-104"><a href="https://mrmacintosh.com/category/nvram/">nvram</a>
+</li>
+<li class="cat-item cat-item-40"><a href="https://mrmacintosh.com/category/pages/">Pages</a>
+</li>
+<li class="cat-item cat-item-106"><a href="https://mrmacintosh.com/category/pam-d/">pam.d</a>
+</li>
+<li class="cat-item cat-item-86"><a href="https://mrmacintosh.com/category/profiles/">Profiles</a>
+</li>
+<li class="cat-item cat-item-156"><a href="https://mrmacintosh.com/category/rapid-security-response-update/">Rapid Security Response Update</a>
+</li>
+<li class="cat-item cat-item-103"><a href="https://mrmacintosh.com/category/recovery-partition/">Recovery Partition</a>
+</li>
+<li class="cat-item cat-item-105"><a href="https://mrmacintosh.com/category/recovery-selector-app/">Recovery Selector.app</a>
+</li>
+<li class="cat-item cat-item-128"><a href="https://mrmacintosh.com/category/safari/">Safari</a>
+</li>
+<li class="cat-item cat-item-3"><a href="https://mrmacintosh.com/category/securetoken/">SecureToken</a>
+</li>
+<li class="cat-item cat-item-56"><a href="https://mrmacintosh.com/category/security-alert/">Security Alert</a>
+</li>
+<li class="cat-item cat-item-116"><a href="https://mrmacintosh.com/category/software-update/">Software Update</a>
+</li>
+<li class="cat-item cat-item-57"><a href="https://mrmacintosh.com/category/spectre-meltdown/">Spectre &amp; Meltdown</a>
+</li>
+<li class="cat-item cat-item-109"><a href="https://mrmacintosh.com/category/startup-chime/">Startup Chime</a>
+</li>
+<li class="cat-item cat-item-87"><a href="https://mrmacintosh.com/category/supplemental-update/">Supplemental Update</a>
+</li>
+<li class="cat-item cat-item-137"><a href="https://mrmacintosh.com/category/sus-software-update-server/">SUS Software Update Server</a>
+</li>
+<li class="cat-item cat-item-129"><a href="https://mrmacintosh.com/category/system-recovery/">System Recovery</a>
+</li>
+<li class="cat-item cat-item-73"><a href="https://mrmacintosh.com/category/t2/">T2</a>
+</li>
+<li class="cat-item cat-item-71"><a href="https://mrmacintosh.com/category/t2-dfu-mode/">T2 DFU Mode</a>
+</li>
+<li class="cat-item cat-item-79"><a href="https://mrmacintosh.com/category/target-disk-mode/">Target Disk Mode</a>
+</li>
+<li class="cat-item cat-item-107"><a href="https://mrmacintosh.com/category/tmutil/">tmutil</a>
+</li>
+<li class="cat-item cat-item-1"><a href="https://mrmacintosh.com/category/uncategorized/">Uncategorized</a>
+</li>
+<li class="cat-item cat-item-133"><a href="https://mrmacintosh.com/category/universal-app-quick-start-program/">Universal App Quick Start Program</a>
+</li>
+<li class="cat-item cat-item-127"><a href="https://mrmacintosh.com/category/update-problems/">Update Problems</a>
+</li>
+<li class="cat-item cat-item-114"><a href="https://mrmacintosh.com/category/upgrade-macos/">Upgrade macOS</a>
+</li>
+<li class="cat-item cat-item-83"><a href="https://mrmacintosh.com/category/varsectomy/">Varsectomy</a>
+</li>
+<li class="cat-item cat-item-157"><a href="https://mrmacintosh.com/category/ventura-13-3-update/">Ventura 13.3 Update</a>
+</li>
+<li class="cat-item cat-item-159"><a href="https://mrmacintosh.com/category/ventura-13-3-1-update/">Ventura 13.3.1 Update</a>
+</li>
+<li class="cat-item cat-item-123"><a href="https://mrmacintosh.com/category/vmware-fusion-parallels/">VMware Fusion &amp; Parallels</a>
+</li>
+<li class="cat-item cat-item-16"><a href="https://mrmacintosh.com/category/wwdc/">WWDC</a>
+</li>
+<li class="cat-item cat-item-158"><a href="https://mrmacintosh.com/category/wwdc23/">WWDC23</a>
+</li>
+<li class="cat-item cat-item-81"><a href="https://mrmacintosh.com/category/xcode/">Xcode</a>
+</li>
+<li class="cat-item cat-item-74"><a href="https://mrmacintosh.com/category/xcode-beta/">Xcode Beta</a>
+</li>
+<li class="cat-item cat-item-58"><a href="https://mrmacintosh.com/category/zombieload/">ZombieLoad</a>
+</li>
+<li class="cat-item cat-item-70"><a href="https://mrmacintosh.com/category/zoom-vulnerability/">Zoom Vulnerability</a>
+</li>
+</ul>
+</nav></section>
+<section id="recent-posts-2" class="widget widget_recent_entries">
+<h2 class="widget-title">Recent Posts</h2><nav aria-label="Recent Posts">
+<ul>
+<li>
+<a href="https://mrmacintosh.com/macos-ventura-13-4-update-22f66-whats-new-rip-seedutil/">macOS Ventura 13.4 Update (22F66) What&#8217;s New? RIP seedutil&#8230;</a>
+<span class="post-date">May 18, 2023</span>
+</li>
+<li>
+<a href="https://mrmacintosh.com/macos-ventura-13-3-1-update-22e261-whats-new/">macOS Ventura 13.3.1 Update (22E261)! Emergency Security Update?</a>
+<span class="post-date">April 7, 2023</span>
+</li>
+<li>
+<a href="https://mrmacintosh.com/wwdc23-wallpaper-desktop-images-4k-downloads/">WWDC23 Wallpaper / Desktop Images 4k Downloads</a>
+<span class="post-date">March 29, 2023</span>
+</li>
+<li>
+<a href="https://mrmacintosh.com/macos-ventura-13-3-update-22e252-whats-new/">macOS Ventura 13.3 Update (22E252)! What’s New?</a>
+<span class="post-date">March 27, 2023</span>
+</li>
+<div class="menu-home-container"><ul id="menu-home-2" class="primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-61"><a href="https://mrmacintosh.com/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://mrmacintosh.com/contact-me/">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6236"><a href="https://twitter.com/ClassicII_MrMac">Twitter</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3608"><a href="https://www.youtube.com/channel/UC7FRPWLwRlhORhFHHywfqAg">YouTube</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3824"><a href="https://mrmacintosh.com/apple-silicon-m1-full-macos-restore-ipsw-firmware-files-database/">M1/M2 IPSW Download</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4950"><a href="https://mrmacintosh.com/macos-ventura-13-full-installer-database-download-directly-from-apple/">Ventura Installers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4952"><a href="https://mrmacintosh.com/macos-12-monterey-full-installer-database-download-directly-from-apple/">Monterey Installers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1151"><a href="https://mrmacintosh.com/macos-big-sur-full-installer-database-download-directly-from-apple/">Big Sur Installers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4550"><a href="https://mrmacintosh.com/how-to-download-macos-catalina-mojave-or-high-sierra-full-installers/">Download macOS</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7267"><a href="https://mrmacintosh.com/macos-safari-full-installer-database-download-directly-from-apple/">Download Safari</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4558"><a href="https://mrmacintosh.com/can-i-upgrade-or-downgrade-macos-every-mac-from-2006-2020/">Downgrade macOS?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7256"><a href="https://mrmacintosh.com/restore-macos-firmware-on-an-apple-silicon-mac-boot-to-dfu-mode/">M1/M2 DFU Restore</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4554"><a href="https://mrmacintosh.com/how-to-restore-bridgeos-on-a-t2-mac-how-to-put-a-mac-into-dfu-mode/">T2 BridgeOS DFU Restore</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4555"><a href="https://mrmacintosh.com/list-of-mac-boardid-deviceid-model-identifiers-machine-models/">Mac Model &#038; BoardID</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7219"><a href="https://mrmacintosh.com/macos-rapid-security-response-version-database/">Ventura RSR Updates</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4552"><a href="https://mrmacintosh.com/macos-ventura-13-4-update-22f66-whats-new-rip-seedutil/">Ventura 13.4 Update</a></li>
