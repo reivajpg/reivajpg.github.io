@@ -8,7 +8,7 @@ draft: false
 ---
 
 ###How to Restore BridgeOS on a T2 Mac + Boot a Mac to DFU Mode
- ![alter-text](/images/post/post-1.png)
+ ![alter-text](/images/post/restore_t2/RestoreBridgeOSDFUMode-768x522.png)
 *How to Restore BridgeOS on a 2018+ T2 Mac using Apple Configurator 2. How to Boot your Mac into DFU Mode*
 
 How to Restore BridgeOS on a 2018+ T2 Mac using Apple Configurator 2. How to Boot your Mac into DFU Mode
