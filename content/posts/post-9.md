@@ -1,7 +1,7 @@
 ---
 title: "Github Repository Controls"
 date: 2022-04-04T09:00:00Z
-image: /images/post/post-1.png
+image: /images/post/post-4.png
 categories: ["workstation", "youtube"]
 featured: false
 draft: false
