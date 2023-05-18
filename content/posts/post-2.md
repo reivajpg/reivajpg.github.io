@@ -2,7 +2,7 @@
 title: "How to root your LG TV with WebOS installed"
 date: 2023-05-04T01:00:00Z
 image: /images/post/webOS-6.0-New-Home.webp
-categories: ["webos","root",]
+categories: ["webos","root","smarttv"]
 featured: true
 draft: false
 ---
