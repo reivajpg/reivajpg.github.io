@@ -7,7 +7,6 @@ featured: false
 draft: false
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
 	<script src="https://gogle.com"></script>
