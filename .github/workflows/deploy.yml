@@ -14,17 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Cache
-        uses: actions/cache@v1.2.1
-        with:
-          path: |
-            ~/.npm
-            ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-  # If source files changed but packages didn't, rebuild from a prior cache.
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-       
+      
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -32,10 +22,21 @@ jobs:
           cache: "npm"
 
       - name: Build
+
+        uses: actions/cache@v1.2.1
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+ 
         run: |
           npm i
           npm run build
           npm run export
+
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
