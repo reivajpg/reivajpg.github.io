@@ -4,7 +4,7 @@ date: 2023-05-31T10:00:00Z
 image: /images/post/post-2.png
 categories: ["laptop","motherboard","repair"]
 featured: false
-draft: true
+draft: false
 ---
 ## Secuencia de arranque de la placa base de un laptop
 
