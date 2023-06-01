@@ -4,7 +4,7 @@ date: 2022-04-02T03:00:00+00:00
 image: /images/post/post-3.png
 categories: ["webos", "root", "mod"]
 featured: true
-draft: false
+draft: true
 ---
 
 Nuestra "aplicación ganadora" hasta el momento, en términos de cosas útiles que realmente requieren root, es PicCap [1], que permite la captura de búfer de fotogramas de baja latencia para los sistemas Ambilight de bricolaje.
