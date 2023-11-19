@@ -1,5 +1,5 @@
 ---
-title: "How to root your LG TV with WebOS installed"
+title: "Comó obtener acceso Root en su LG TV con WebOS"
 date: 2023-05-04T01:00:00Z
 image: /images/post/root_webos/webOS-6.0-New-Home.webp
 categories: ["webos", "root", "mod"]

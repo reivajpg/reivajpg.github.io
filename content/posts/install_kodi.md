@@ -12,7 +12,7 @@ draft: false
 ##Que es Kodi?
 Kodi es un centro multimedia gratuito de código abierto (GPL) y multiplataforma que puede centralizar todos sus medios locales, de red y de Internet en una ubicación de fácil acceso; está disponible para casi cualquier plataforma.
 
-Lamentablemente en la tienda de aplicaciones de LG WebOS Kodi no está disponible.
+Lamentablemente en la tienda de aplicaciones de LG WebOS Kodi no está disponible, pero el repositorio de Homebrew viene al rescate ...
 
 ##Por qué debería de elegir Kodi en lugar de otras alternativas?
 La respuesta es clara y sencilla, los Add-ons. Explicado de forma muy sencilla, los Add-ons son pequeños «programas» o extensiones que nos permitirán realizar diferentes funciones: consultar el tiempo, agregar un servidor propio, enlazar servicios como Plex, ver programas de televisión y un larguísimo etcétera.
@@ -24,7 +24,7 @@ Aplicaciones para Smart TV en LG
 Después de terminar el desarrollo de su aplicación, es posible que deba probarla. La aplicación Developer Mode proporciona una forma más rápida de instalar, depurar y probar aplicaciones webOS TV en su televisor. A continuación se muestra el concepto de la aplicación Developer Mode que se conecta entre la TV y la PC.
 
 
-El modo desarrollador está habilitado por un tiempo limitado. Una vez que se activa el Modo desarrollador, puede verificar el tiempo restante de la sesión en el campo Sesión restante.
+El modo desarrollador está habilitado por un tiempo limitado (1000 horas). Una vez que se activa el Modo desarrollador, puede verificar el tiempo restante de la sesión en el campo Sesión restante.
 
 Para ampliar el tiempo restante, conecte el televisor a una red y haga clic en el botón EXTEND. Si el tiempo de la sesión expira, no podrá extender el tiempo de la sesión. Puede extender el tiempo de la sesión con el comando ares -extend-dev desde la CLI.
 
