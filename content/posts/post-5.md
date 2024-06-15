@@ -1,8 +1,8 @@
 ---
 title: "Development ESP "
-date: 2022-04-04T08:00:00Z
+date: 2024-06-15T08:00:00Z
 image: /images/post/post-5.png
-categories: ["programming", "robotics"]
+categories: ["programming", "ESP32", "ESP8266"]
 featured: true
 draft: false
 ---
