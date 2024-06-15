@@ -1,9 +1,9 @@
 ---
 title: "Let’s, Talk </br> About You"
 description: "meta description"
-phone: "+34632122909"
-mail: "reivajpg@telegmail.com"
-location: "Calle Agapito Marazuela #9 Segovia, España. CP. 40005"
+phone: ""
+mail: ""
+location: "España. CP. 40005"
 form_action: "#"
 layout: "contact"
 addresses:
