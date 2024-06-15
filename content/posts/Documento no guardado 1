@@ -1,0 +1,6 @@
+curl -L -o /home/root/kodi.ipk https://mirrors.kodi.tv/nightlies/webos/master/org.xbmc.kodi_20230810-bdadf49c-master_arm.ipk
+
+https://github.com/webosbrew/webos-homebrew-channel/releases/download/v0.6.3/org.webosbrew.hbchannel_0.6.3_all.ipk
+
+
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/home/root/kodi.ipk","subscribe":true}'
