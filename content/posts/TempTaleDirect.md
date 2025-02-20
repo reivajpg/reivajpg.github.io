@@ -1,4 +1,5 @@
-Title:TempTale Direct Teardown
+---
+title:TempTale Direct Teardown
 Author:rsaxvc
 CreatedDateTime:2017-04-05T22:10:52
 ModifiedDateTime:2017-04-05T22:10:52
@@ -6,6 +7,8 @@ Tag:STM32
 Tag:ARM
 Tag:flash
 Tag:Teardown
+categories: ["mod"]
+featured: true
 ---
 <h2>A Handy Shipping Watchdog</h2>
 <p>
