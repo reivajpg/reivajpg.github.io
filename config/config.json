@@ -28,12 +28,12 @@
   "metadata": {
     "meta_author": "ReivaJPG",
     "meta_image": "/images/og-image.png",
-    "meta_description": "ReivaJPG Personal Blog"
+    "meta_description": "ReivaJPG Blog"
   },
   "widgets": {
     "about": {
       "enable": true,
-      "content": "Lorem ipsum dolor sit amet, conse tfctetur adipiscing elit. Vel in in donec iaculis tempasus odio nunc laoreet . Libero ullam rgscorper."
+      "content": "widgets widgets widgets widgets widgets Lorem ipsum dolor sit amet, conse tfctetur adipiscing elit. Vel in in donec iaculis tempasus odio nunc laoreet . Libero ullam rgscorper."
     },
     "featured_posts": {
       "enable": true,

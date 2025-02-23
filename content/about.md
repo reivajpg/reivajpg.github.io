@@ -18,15 +18,15 @@ education:
 experience:
   title: Work Experience
   list:
+    - First Officer in Electrical Industrial Maintenance
     - RGB Elec. Partner.(2019-2022) General administration, with two technicians in charge. Repair and maintenance of electronic equipment, including computers, printers, audio and video systems, and other electronic devices.
     - RGB Elec. Technicians(2015-2019) Diagnosis and resolution of technical problems in electronic equipment. Installation and configuration of electronic systems, including computer networks and audio and video systems.
-    #- Best Article
-    #- Best New Newel
+        #- Best New Newel
     #- Best New Newel
     #- Best Book
     #- Best Article
     #- Best New Newel
-    - Best Book "Foundation"
+    #- Best Book "Foundation"
 
 ---
 

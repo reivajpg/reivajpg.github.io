@@ -3,7 +3,7 @@ title: "Let’s, Talk </br> About You"
 description: "meta description"
 phone: ""
 mail: ""
-location: "España. CP. 40005"
+location: "Spain. CP. 40005"
 form_action: "#"
 layout: "contact"
 addresses:

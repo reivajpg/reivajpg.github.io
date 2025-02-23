@@ -14,31 +14,15 @@ Puede ver una lista de las aplicaciones homebrew actualmente disponibles aquí: 
 
 También puede bloquear telemetría, actualizaciones, etc. (sin depender de algo como un pihole).
 
+Instalar el cliente alternativo de YouTube sin publicidad. [3]
+
 [1] https://github.com/TBSniller/piccap
 
 [2] https://github.com/webosbrew/custom-screensaver
 
-Instalar el cliente alternativo de YouTube sin publicidad, por ejemplo
-
-	
-beranabusel 15 ene 2022 | padre | siguiente [–]
-
-¿Puede por favor elaborar? no pude encontrar nada en esto
-
-	
-gattilorenz el 15 ene 2022 | raíz | padre | siguiente [–]
-
-Es una de las (pocas) aplicaciones en el repositorio de Homebrew que se instala (el repositorio, no la aplicación) de forma predeterminada después de rootear: https://repo.webosbrew.org/apps/
-Lo probé brevemente ayer por la noche, parece funcionar bien.
-
-
-	
-mrweasel el 15 ene 2022 | anterior [–]
-
-Solo espere hasta que alguien lance una aplicación de PornHub, el 50% de los televisores LG se arraigarán durante la noche.
+[3] https://repo.webosbrew.org/apps/youtube.leanback.v4
 
 
 ![alter-text](/images/post/post-1.png)
 *Example Caption*
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
